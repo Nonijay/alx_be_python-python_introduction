@@ -1,8 +1,8 @@
 daily_task = input("Enter your task: ")
-task_priority = input("what is your task priority (reply with: high, medium, low): ")
-time_bound = input("Is the task time bound (answer with a simple yes or no): ")
+priority = input("what is your task priority (high, medium, low): ")
+time_bound = input("Is it time-bound (yes or no): ")
 
-match task_priority :
+match priority :
     case  "high":
         if time_bound == "yes":
             print(f"{daily_task} is a time-senstive high Priority task that requires immediate attention today")
